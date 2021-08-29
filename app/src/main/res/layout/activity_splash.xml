@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009691"
+    android:gravity="center"
+    tools:context=".SplashActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/spirax"
+        android:gravity="center"
+        android:shadowColor="@android:color/holo_orange_light"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="30"
+        android:text="ProManage"
+        android:textColor="@color/white"
+        android:textSize="65sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
