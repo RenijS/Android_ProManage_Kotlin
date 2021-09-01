@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#2D009688"
     android:orientation="vertical"
-    tools:context=".SignUpActivity">
+    tools:context=".activities.SignUpActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_sign_up_activity"
@@ -74,6 +74,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="email"
+                        android:inputType="textEmailAddress"
                         android:textSize="20dp"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -93,7 +94,7 @@
 
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btSignUp"
+                    android:id="@+id/btSignUp2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="sign up"

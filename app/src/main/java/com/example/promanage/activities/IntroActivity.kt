@@ -1,19 +1,17 @@
-package com.example.promanage
+package com.example.promanage.activities
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
+import android.widget.Button
 import androidx.appcompat.app.ActionBar
-import com.example.promanage.databinding.ActivityIntroBinding
+import com.example.promanage.R
 
-class IntroActivity : AppCompatActivity() {
-    lateinit var binding: ActivityIntroBinding
+class IntroActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityIntroBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_intro)
 
         window.setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -23,11 +21,13 @@ class IntroActivity : AppCompatActivity() {
         val actionBar: ActionBar? = supportActionBar
         actionBar?.hide()
 
-        binding.btSignUp.setOnClickListener {
+        val btSignUp = findViewById<Button>(R.id.btSignUp)
+        btSignUp.setOnClickListener {
             startActivity(Intent(this, SignUpActivity::class.java))
         }
 
-        binding.btSignIn.setOnClickListener {
+        val btSignIn = findViewById<Button>(R.id.btSignIn)
+        btSignIn.setOnClickListener {
             startActivity(Intent(this, SignInActivity::class.java))
         }
     }

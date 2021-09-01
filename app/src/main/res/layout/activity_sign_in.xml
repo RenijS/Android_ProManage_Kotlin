@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2D009688"
-    tools:context=".SignInActivity"
+    tools:context=".activities.SignInActivity"
     android:orientation="vertical">
 
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_sign_up_activity"
+        android:id="@+id/toolbar_sign_in_activity"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize">
 
@@ -80,16 +80,16 @@
 
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btSignUp"
+                    android:id="@+id/btSignIn2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="sign up"
-                    android:textColor="@color/white"
-                    android:textSize="18dp"
                     android:layout_margin="10dp"
+                    android:background="@drawable/shape_button_rounded"
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"
-                    android:background="@drawable/shape_button_rounded"/>
+                    android:text="sign in"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
